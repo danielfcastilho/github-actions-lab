@@ -14,3 +14,10 @@ jobs:
           npm -v
       - name: ls command
         run: ls -a
+  run-windows-command:
+    runs-on: windows-latest
+    needs: ["run-shell-command"]
+    steps:
+      - name: Directory Bash
+        run: pwd
+        shell: bash
