@@ -13,4 +13,4 @@ jobs:
           node -v
           npm -v
       - name: ls command
-        run: ls
+        run: ls -a
